@@ -1,2 +1,2 @@
-api_group_key = 'vk1.a.BIDou-nNcFutI2qc5f2afy6Y2BOhHvegdpK-ZWaPYnR5SSbDVtyGJMmVJrT0SG0pqW2Ls0gLHu-odRW9D7msZR-3WHjLAcFsQdReR8haTYT2fBAIV6I4eN4i_8GXahaeuXDUWa-837fKk1R4EXKP99ljpFHpSV2taw7hJ5qNjUyqy8_qVnCSr37SbD1NssLXEZbXt4txDAWYcjuzfHE9Dg'
-vk_token = 'vk1.a.BkS7ZAYmsNko0Fvv0Ho0chIS0c3UzvFM5qfOH_sF6l6nkkZ2fQpx4Hp0tZYKnqxewWtyOXXWI4K8kniBnUZ7rCgIEw2rBadt9amaJRa0GH03HuJi1B1QV_-nZrzJeW0WRigOLoltWlGXciwPSwlQPzZELPAcT7eX4u8gQw2Eb0peAP7dl0hxN4VYk5II14pxYDLjTcow0b5zVfZ-AmGcJg'
+api_group_key = '...'
+vk_token = '...'
