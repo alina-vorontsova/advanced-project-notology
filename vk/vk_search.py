@@ -1,4 +1,5 @@
 import requests
+
 from config import vk_token
 
 
@@ -8,7 +9,14 @@ class VkClient:
     def __init__(self, token: str):
         self.token = token
 
-    def search_users(self, offset: str, count: str, hometown: str, sex: str, age: str):
+    def search_users(
+            self,
+            offset: str,
+            count: str,
+            hometown: str,
+            sex: str,
+            age: str
+    ):
         """Поиск пользователей по определённым критериям"""
         url = self.url + "users.search"
         params = {
@@ -119,16 +127,24 @@ def get_potential_friend_photos(client: VkClient, owner_id: str):
     return [_["sizes"][-1]["url"] for _ in popular_photos]
 
 
-#if __name__ == "__main__":
-#    """Пример работы"""
-#
-#    # Создаём экземпляр класса vk клиента
-#    vk_client = VkClient(vk_token)
-#
-#    # Ищем потенциальных друзей по критериям
-#    my_potential_friends = get_potential_friends(client=vk_client, sex="2", hometown="Москва", age="20")
-#    print(my_potential_friends)
-#
-#    # Получаем три популярные фотографии по id пользователя
-#    my_potential_friend_photos = get_potential_friend_photos(client=vk_client, owner_id="481468488")
-#    print(my_potential_friend_photos)
+if __name__ == "__main__":
+    """Пример работы"""
+
+    # Создаём экземпляр класса vk клиента
+    vk_client = VkClient(vk_token)
+
+    # Ищем потенциальных друзей по критериям
+    my_potential_friends = get_potential_friends(
+        client=vk_client,
+        sex="2",
+        hometown="Москва",
+        age="20"
+    )
+    print(my_potential_friends)
+
+    # Получаем три популярные фотографии по id пользователя
+    my_potential_friend_photos = get_potential_friend_photos(
+        client=vk_client,
+        owner_id="481468488"
+    )
+    print(my_potential_friend_photos)

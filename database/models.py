@@ -42,6 +42,10 @@ def create_tables(engine):
     '''Создание таблиц в базе данных.'''
     Base.metadata.create_all(engine)
 
+
 def drop_tables(engine):
     '''Удаление таблиц в базе данных.'''
-    Base.metadata.drop_all(bind=engine, tables=[User.__table__, Photo.__table__])
+    Base.metadata.drop_all(
+        bind=engine,
+        tables=[User.__table__, Photo.__table__]
+    )
